@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7676172075",
+    "project_id": "backend-yk123",
+    "storage_bucket": "backend-yk123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7676172075:android:2d985d7aa4b50af629d76e",
+        "android_client_info": {
+          "package_name": "com.yousuf.backend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7676172075-mgh2plu8go1ofe2r416sqpf2i673j9ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2_w-BoM8ysK1r1AJCzivD9P76ZpIEPqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7676172075-mgh2plu8go1ofe2r416sqpf2i673j9ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
