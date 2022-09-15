@@ -1,3 +1,4 @@
+import 'package:backend/constants/routes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,7 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
           TextButton(
               onPressed: () {
                 Navigator.of(context)
-                    .pushNamedAndRemoveUntil('/main/', (route) => false);
+                    .pushNamedAndRemoveUntil(mainRoute, (route) => false);
               },
               child: const Text('go back'))
         ],

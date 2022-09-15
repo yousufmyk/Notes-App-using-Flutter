@@ -1,3 +1,4 @@
+import 'package:backend/constants/routes.dart';
 import 'package:backend/views/login_view.dart';
 import 'package:backend/views/register_view.dart';
 import 'package:backend/views/verify_email_view.dart';
@@ -18,10 +19,10 @@ void main() {
       ),
       home: const HomePage(),
       routes: {
-        '/login/': (context) => const LoginView(),
-        '/register/': (context) => const RegisterView(),
-        '/notes/': (context) => const NotesView(),
-        '/main/': (context) => const RegisterView(),
+        loginRoute: (context) => const LoginView(),
+        registerRoute: (context) => const RegisterView(),
+        notesRoute: (context) => const NotesView(),
+        mainRoute: (context) => const RegisterView(),
       },
     ),
   );
@@ -81,8 +82,10 @@ class _NotesViewState extends State<NotesView> {
                   final shouldLogout = await showLogOutDailog(context);
                   if (shouldLogout) {
                     await FirebaseAuth.instance.signOut();
-                    Navigator.of(context)
-                        .pushNamedAndRemoveUntil('/login/', (_) => false);
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      loginRoute,
+                      (_) => false,
+                    );
                   }
               }
             },
